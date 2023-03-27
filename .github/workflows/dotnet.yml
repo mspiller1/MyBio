@@ -23,7 +23,7 @@ jobs:
     - name: Build
       run: dotnet build -c Release
     - name: Publish
-      run: dotnet publish -c Release -o ${{emv.DOTNET_ROOT}}/myapp
+      run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
       working-directory: MyBio
     
     - name: Upload a Build Artifact
